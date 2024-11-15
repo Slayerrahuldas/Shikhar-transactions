@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco & Shikhar Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Eco & Shikhar Dashboard</h1>
+    
+    <!-- Search bar -->
+    <input type="text" id="search-bar" placeholder="Search..." onkeyup="filterTable()">
+    
+    <!-- Filters -->
+    <div class="filters">
+        <select id="dets-me-name" onchange="filterTable()">
+            <option value="">Select DETS ME Name</option>
+        </select>
+        <select id="dets-beat" onchange="filterTable()">
+            <option value="">Select DETS Beat</option>
+        </select>
+        <select id="fnr-me-name" onchange="filterTable()">
+            <option value="">Select FnR ME Name</option>
+        </select>
+        <select id="fnr-beat" onchange="filterTable()">
+            <option value="">Select FnR Beat</option>
+        </select>
+    </div>
+    
+    <!-- Data Table -->
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>HUL Code</th>
+                <th>Outlet Name</th>
+                <th>DETS ME Name</th>
+                <th>DETS Beat</th>
+                <th>FnR ME Name</th>
+                <th>FnR Beat</th>
+                <th>ECO</th>
+                <th>Shikhar</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
