@@ -1,4 +1,3 @@
-// Sample data (replace with actual data from Excel file)
 const data = [
   {
     "hulCode": "HUL-217085D-PAR3",
